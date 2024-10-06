@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"> <!-- Ensures content fills the screen initially -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Search Bar -->
+            <EditText
+                android:id="@+id/search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pesquisar raça, idade"
+                android:drawableEnd="@android:drawable/ic_menu_search"
+                android:padding="12dp"
+                android:background="@drawable/search_background"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp" />
+
+            <!-- CardView -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Image Placeholder -->
+                    <ImageView
+                        android:id="@+id/image_placeholder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="261dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="Image Placeholder"
+                        android:src="@drawable/placeholder_image" />
+
+                    <!-- Dots Indicator (Three dots) -->
+                    <LinearLayout
+                        android:id="@+id/dots_indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp">
+
+                        <View
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/dot_inactive" />
+
+                        <View
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/dot_active" />
+
+                        <View
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/dot_inactive" />
+                    </LinearLayout>
+
+                    <!-- Title Text -->
+                    <TextView
+                        android:id="@+id/item_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cachorro 1"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- CardView -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Image Placeholder -->
+                    <ImageView
+                        android:id="@+id/image_placeholder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="261dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="Image Placeholder"
+                        android:src="@drawable/placeholder_image" />
+
+                    <!-- Dots Indicator (Three dots) -->
+                    <LinearLayout
+                        android:id="@+id/dots_indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp">
+
+                        <View
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/dot_inactive" />
+
+                        <View
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/dot_active" />
+
+                        <View
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/dot_inactive" />
+                    </LinearLayout>
+
+                    <!-- Title Text -->
+                    <TextView
+                        android:id="@+id/item_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cachorro 1"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

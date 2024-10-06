@@ -110,30 +110,31 @@
         app:layout_constraintHorizontal_bias="0.5" />
 
     <!-- Submit Button -->
+
+    <!-- Bottom Navigation -->
     <Button
         android:id="@+id/submitButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Enviar"
+        android:layout_marginTop="124dp"
         android:backgroundTint="@android:color/holo_green_light"
-        android:textColor="@android:color/white"
         android:padding="16dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:text="Enviar"
+        android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextContato"
-        app:layout_constraintHorizontal_bias="0.5" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextContato" />
 
-    <!-- Bottom Navigation -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="427dp"
+        android:layout_height="79dp"
         app:itemIconTint="@android:color/black"
         app:itemTextColor="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
