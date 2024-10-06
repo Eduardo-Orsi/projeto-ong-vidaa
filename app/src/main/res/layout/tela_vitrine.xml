@@ -11,7 +11,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="true"> <!-- Ensures content fills the screen initially -->
+        android:fillViewport="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -19,7 +19,6 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <!-- Search Bar -->
             <EditText
                 android:id="@+id/search_bar"
                 android:layout_width="match_parent"
@@ -31,9 +30,8 @@
                 android:layout_marginBottom="16dp"
                 android:layout_marginTop="16dp" />
 
-            <!-- CardView -->
             <androidx.cardview.widget.CardView
-                android:id="@+id/card_view"
+                android:id="@+id/card_view1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -49,9 +47,8 @@
                     android:orientation="vertical"
                     android:padding="16dp">
 
-                    <!-- Image Placeholder -->
                     <ImageView
-                        android:id="@+id/image_placeholder"
+                        android:id="@+id/image_placeholder1"
                         android:layout_width="wrap_content"
                         android:layout_height="261dp"
                         android:layout_gravity="center"
@@ -60,7 +57,7 @@
 
                     <!-- Dots Indicator (Three dots) -->
                     <LinearLayout
-                        android:id="@+id/dots_indicator"
+                        android:id="@+id/dots_indicator1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -86,9 +83,8 @@
                             android:background="@drawable/dot_inactive" />
                     </LinearLayout>
 
-                    <!-- Title Text -->
                     <TextView
-                        android:id="@+id/item_title"
+                        android:id="@+id/item_title1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Cachorro 1"
@@ -127,7 +123,6 @@
                         android:contentDescription="Image Placeholder"
                         android:src="@drawable/placeholder_image" />
 
-                    <!-- Dots Indicator (Three dots) -->
                     <LinearLayout
                         android:id="@+id/dots_indicator"
                         android:layout_width="wrap_content"
