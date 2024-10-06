@@ -87,7 +87,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            tools:srcCompat="@layout/img" />
+            tools:srcCompat="@drawable/mapa" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
