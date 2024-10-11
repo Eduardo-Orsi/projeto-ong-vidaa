@@ -65,7 +65,7 @@
         android:lineSpacingExtra="4dp"/>
 
     <Button
-        android:id="@+id/btnAdopt"
+        android:id="@+id/adotar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Adotar"
