@@ -1,128 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:background="@android:color/white">
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center_horizontal">
+        android:orientation="vertical">
 
-        <!-- CardView for ONG details -->
-        <androidx.cardview.widget.CardView
+        <TextView
+            android:id="@+id/textView7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:elevation="4dp"
-            android:padding="16dp"
-            android:background="@android:color/white">
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Ong Vidaa" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/tvOngName"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Ong Vidaa"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:layout_gravity="center_horizontal"
-                    android:paddingBottom="8dp" />
-
-                <TextView
-                    android:id="@+id/tvOngDescription"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
-                    android:lineSpacingExtra="4dp"
-                    android:text="Nullam id auctor eros. Maecenas vitae massa non nisi placerat venenatis.
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Nullam id auctor eros. Maecenas vitae massa non nisi placerat venenatis.
                  Mauris nec odio convallis, tempor arcu sed, sollicitudin ligula. Duis a lobortis neque,
                   a pretium ex. Nam neque metus, tempor sed venenatis vitae, pulvinar et quam. Pellentesque
                    lobortis sit amet sapien ac dapibus. Pellentesque scelerisque maximus nunc, in posuere
                     nisi vulputate non. Vivamus nulla lacus, posuere gravida ultrices eu, faucibus ut tortor.
-                     Fusce nec pharetra augue. Sed id volutpat mi."
-                    android:textAlignment="center"
-                    android:textSize="14sp" />
+                     Fusce nec pharetra augue. Sed id volutpat mi." />
 
-                <TextView
-                    android:id="@+id/tvContact"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:paddingBottom="4dp"
-                    android:textStyle="bold"
-                    android:text="Contato: (47) 99999-9999"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:id="@+id/tvEmail"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="4dp"
-                    android:gravity="center"
-                    android:textStyle="bold"
-                    android:text="E-mail: email@ong.com.br"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:id="@+id/tvAddress"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="4dp"
-                    android:gravity="center"
-                    android:textStyle="bold"
-                    android:text="Endereço: Rua X, 10, Brusque"
-                    android:textSize="14sp" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <!-- ImageView for Map -->
-        <ImageView
-            android:id="@+id/imgMap"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:src="@drawable/mapa"
-            android:layout_marginBottom="16dp"
-            android:scaleType="centerCrop"
-            android:contentDescription="Mapa de localização" />
-
-        <!-- PIX Section -->
-        <LinearLayout
+        <TextView
+            android:id="@+id/textView5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center_horizontal">
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Contato: (47) 99999-9999" />
 
-            <TextView
-                android:id="@+id/tvPixTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Doações via PIX"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:paddingBottom="8dp" />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="E-mail: email@ong.com.br" />
 
-            <TextView
-                android:id="@+id/tvPixKeyLabel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Chave PIX"
-                android:textSize="14sp"
-                android:paddingBottom="8dp" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Endereço: Rua X, 10, Brusque" />
 
-            <Button
-                android:id="@+id/btnCopyPix"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Copiar Chave"
-                android:backgroundTint="@android:color/holo_blue_light"
-                android:textColor="@android:color/white" />
-        </LinearLayout>
     </LinearLayout>
-</ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="381dp"
+        app:srcCompat="@drawable/mapa" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Doações via PIX"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Chave PIX" />
+
+        <Button
+            android:id="@+id/btnCopyPix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:layout_gravity="center"
+            android:text="Copiar Chave"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>
