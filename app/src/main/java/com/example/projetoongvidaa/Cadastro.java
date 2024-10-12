@@ -29,14 +29,13 @@ public class Cadastro extends AppCompatActivity {
 
 
 
-//        setContentView(R.layout.activity_contato);
-//        toVitrine = findViewById(R.id.submitButton);
-//        toVitrine.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(Cadastro.this, Cadastro.class);
-//                startActivity(intent);
-//            }
-//        });
+        toVitrine = findViewById(R.id.enviar);
+        toVitrine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Cadastro.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

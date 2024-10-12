@@ -93,7 +93,7 @@
                         android:layout_marginTop="8dp" />
 
                     <Button
-                        android:id="@+id/button"
+                        android:id="@+id/adotar1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:backgroundTint="#80D8F4"
@@ -168,7 +168,7 @@
                         android:layout_marginTop="8dp" />
 
                     <Button
-                        android:id="@+id/button2"
+                        android:id="@+id/adotar2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:backgroundTint="#80D8F4"

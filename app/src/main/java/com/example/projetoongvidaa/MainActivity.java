@@ -15,22 +15,31 @@ public class MainActivity extends AppCompatActivity {
     // ViewPager2 viewPagerCarousel;
     //private CarouselAdapter carouselAdapter;
 
-    private Button toCadastro;
-    //private Button toContato;
+    private Button toAdocao1;
+    private Button toAdocao2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        toCadastro = findViewById(R.id.submitButton);
-//        toCadastro.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(MainActivity.this, Contato.class);
-//                startActivity(intent);
-//            }
-//        });
+        toAdocao1 = findViewById(R.id.adotar1);
+        toAdocao1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Adocao.class);
+                startActivity(intent);
+            }
+        });
+
+        toAdocao2 = findViewById(R.id.adotar2);
+        toAdocao2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Adocao.class);
+                startActivity(intent);
+            }
+        });
 
 
 
